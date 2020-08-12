@@ -3,17 +3,27 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>com.cognizant.gateway</groupId>
 	<artifactId>ServiceZuulAPIGateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ServiceZuulAPIGateway</name>
-	<description>This Project for ServiceZuulAPIGateway</description>
+
+	<properties>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+			<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+			<maven.compiler.source>1.8</maven.compiler.source>
+			<maven.compiler.target>1.8</maven.compiler.target>
+			<java.version>1.8</java.version>
+			<opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
+			<app.name>ServiceZuulAPIGateway</app.name>
+	</properties>
+
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.3.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-parent</artifactId>
+			<version>2.3.0.RELEASE</version>
 	</parent>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
